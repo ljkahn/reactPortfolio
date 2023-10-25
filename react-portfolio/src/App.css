@@ -1,0 +1,41 @@
+:root {
+    --background: #0E0E0E;
+    --text: 
+
+}
+
+#root{
+    background: var(--background);
+   min-height: 100vh;
+}
+
+
+
+/* HEADER/NAVBAR */
+
+.nav-link {
+
+    text-align: center;
+    color:aliceblue;
+
+}
+
+
+
+
+/* ABOUT */
+.about {
+    color: aliceblue;
+    text-align: center;
+    margin: 10rem;
+    margin
+}
+
+
+
+
+
+
+
+
+/* WORK */
