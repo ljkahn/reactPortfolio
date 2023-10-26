@@ -1,27 +1,23 @@
 :root {
     --background: #8c594d;
-    --text: 
+    --text: #d9a282;
 
 }
-
+/* 
 #root{
     background: var(--background);
    min-height: 100vh;
-}
+} */
 
 
-/* BACKGROUND */
-.ParticleEffect {
-    position: fixed;
-    z-index: -1;
-}
+
 
 /* HEADER/NAVBAR */
 
 .nav-link {
 
     text-align: center;
-    color:aliceblue;
+    color: var(--text);
 
 }
 
@@ -35,10 +31,11 @@ img.nav-brand {
 
 /* ABOUT */
 .about {
-    color: aliceblue;
+    color: var(--text);
     text-align: center;
     margin: 10rem;
     margin-left: 5rem;
+
 }
 
 

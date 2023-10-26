@@ -1,8 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Particles from "react-tsparticles";
-// import { loadFull } from "tsparticles";
+
 
 
 
@@ -41,4 +40,4 @@ function App() {
   )
 }
 
-export default App;
+export default App; 

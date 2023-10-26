@@ -1,9 +1,11 @@
+import React from "react";
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
+import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import './Background.css'
 
-const App = () => {
+const Background = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -22,10 +24,11 @@ const App = () => {
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
+            className="ParticleEffect"
             options={{
                 background: {
                     color: {
-                        value: "#0d47a1",
+                        value: "#8c594d",
                     },
                 },
                 fpsLimit: 120,
@@ -59,7 +62,7 @@ const App = () => {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: .5,
                         width: 1,
                     },
                     move: {
@@ -69,13 +72,13 @@ const App = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: .3,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
                         value: 80,
                     },
@@ -83,7 +86,7 @@ const App = () => {
                         value: 0.5,
                     },
                     shape: {
-                        type: "circle",
+                        type: "hexagon",
                     },
                     size: {
                         value: { min: 1, max: 5 },
@@ -94,3 +97,4 @@ const App = () => {
         />
     );
 };
+export default Background;
