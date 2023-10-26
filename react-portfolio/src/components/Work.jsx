@@ -10,7 +10,7 @@ function WorkCarousel() {
   return (
     <div>Project
 
-    <Carousel>
+    <Carousel className='carouselSize'>
       <Carousel.Item>
         <img src={littleSiteofHorrors} alt="Little Site of Horrors" className='img-fluid' />
         <Carousel.Caption>
@@ -34,7 +34,7 @@ function WorkCarousel() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <img src={text} alt="text" className='img-fluid'/>
         <Carousel.Caption>
           <h3>Third slide label</h3>
@@ -60,7 +60,7 @@ function WorkCarousel() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
 
     </div>

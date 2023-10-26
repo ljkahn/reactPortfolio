@@ -1,5 +1,5 @@
 :root {
-    --background: #0E0E0E;
+    --background: #8c594d;
     --text: 
 
 }
@@ -10,6 +10,11 @@
 }
 
 
+/* BACKGROUND */
+.ParticleEffect {
+    position: fixed;
+    z-index: -1;
+}
 
 /* HEADER/NAVBAR */
 
@@ -18,6 +23,11 @@
     text-align: center;
     color:aliceblue;
 
+}
+
+img.nav-brand {
+    width: 8rem;
+    height: 5rem;
 }
 
 
@@ -39,3 +49,8 @@
 
 
 /* WORK */
+
+.carouselSize {
+    width: 50rem;
+    height: 10rem;
+}

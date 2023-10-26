@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import brand from '../assets/workImages/brand.png';
 
 
 
@@ -9,6 +10,7 @@ function Header() {
     <Navbar expand="lg" className="bg-body">
     <Container className='d-flex justify-content-center'>
       <Navbar.Brand>
+        <img src={brand} alt='Lia Kahn Logo' className='nav-brand'/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

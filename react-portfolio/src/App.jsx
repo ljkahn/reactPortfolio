@@ -12,19 +12,18 @@ import Header from './components/Navbar';
 import Footer from './components/Footer';
 import Error from './components/Error';
 import WorkCarousel from './components/Work'
+import Background from './components/Background'
 
 
 function App() {
-  //   const particlesInit = async (main) => {
-  //   console.log(main);
-  //   await loadFull(main);
-  // };
+
 
   return (
 
     
     
   <Router>
+    <Background/>
     <Header/>
     <Routes>
     <Route path = '/' element = {<About/>}/>
