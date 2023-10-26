@@ -1,8 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import littleSiteofHorrors from '../assets/workImages/littleSiteofHorrors.png'
+import gameSeekers from '../assets/workImages/gameSeekers.png'
+import austynCody from '../assets/workImages/austynCody.png'
 
 
-function Project() {
+
+function WorkCarousel() {
   return (
     <div>Project
 
@@ -22,7 +26,7 @@ function Project() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={text} alt="text" className='img-fluid' />
+        <img src={austynCody} alt="Austyn Cody Website" className='img-fluid' />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
@@ -63,4 +67,4 @@ function Project() {
   )
 }
 
-export default Project
+export default WorkCarousel;

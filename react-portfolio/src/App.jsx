@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 import Header from './components/Navbar';
 import Footer from './components/Footer';
 import Error from './components/Error';
-import Work from './components/Work'
+import WorkCarousel from './components/Work'
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
     <Route path = '/' element = {<About/>}/>
     <Route path = '/about' element = {<About/>}/>
     <Route path = '/contact' element = {<Contact/>}/>
-    <Route path = '/work' element = {<Work/>}/>
+    <Route path = '/work' element = {<WorkCarousel/>}/>
     <Route path = '*' element = {<Error/>}/>
     </Routes>
     <Footer/>
@@ -42,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
