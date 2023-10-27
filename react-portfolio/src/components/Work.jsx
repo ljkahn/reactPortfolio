@@ -4,39 +4,33 @@ import {Container} from 'react-bootstrap';
 import littleSiteofHorrors from '../assets/workImages/littleSiteofHorrors.png'
 import gameSeekers from '../assets/workImages/gameSeekers.png'
 import austynCody from '../assets/workImages/austynCody.png'
+import javaQuiz from '../assets/workImages/javaQuiz.png'
+import weatherDash from '../assets/workImages/weatherDash.png'
+import workDaySched from '../assets/workImages/workDaySched.png'
 
 
 
 function WorkCarousel() {
   return (
-    <div>Project
-      <Container className='d-flex justify-content-center'>
-    <Carousel className='carouselSize'>
+    <div>
+
+    <Carousel className='position-absolute top-50 start-50 translate-middle carouselSize work'>
       <Carousel.Item>
-        <img src={littleSiteofHorrors} alt="Little Site of Horrors" className='img-fluid' />
+        <img src={littleSiteofHorrors} alt="Little Site of Horrors" className='img-fluid work' />
         <Carousel.Caption>
           <h3>Little Site of Horrors</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={gameSeekers} alt="Game Seekers" className ='img-fluid' />
+        <img src={gameSeekers} alt="Game Seekers" className ='img-fluid work' />
         <Carousel.Caption>
           <h3>Game Seekers</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={austynCody} alt="Austyn Cody Website" className='img-fluid' />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      {/* <Carousel.Item>
-        <img src={text} alt="text" className='img-fluid'/>
+        <img src={austynCody} alt="Austyn Cody Website" className='img-fluid work' />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
@@ -45,7 +39,7 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={text} alt="Website" className='img-fluid' />
+        <img src={javaQuiz} alt="text" className='img-fluid work'/>
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
@@ -54,16 +48,24 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={text} alt="Website" className='img-fluid'/>
+        <img src={weatherDash} alt="Website" className='img-fluid work' />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
-      </Carousel.Item> */}
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={workDaySched} alt="Website" className='img-fluid work'/>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
-</Container>
     </div>
   )
 }

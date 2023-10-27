@@ -21,7 +21,7 @@
 /* HEADER/NAVBAR */
 
 .navbar{
-    
+   margin-top: 5rem; 
 }
 
 .nav-link {
@@ -34,6 +34,10 @@
 img.nav-brand {
     width: 8rem;
     height: 5rem;
+}
+
+img.work {
+    border-radius: 3rem;
 }
 
 
@@ -65,7 +69,7 @@ margin-left: 10rem;
 
 .carouselSize {
     width: 50rem;
-    height: 10rem;
+    height: 5rem;
     
    
 }
