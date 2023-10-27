@@ -3,11 +3,17 @@
     --text: #d9a282;
 
 }
-/* 
+
+@font-face{
+    font-family:'FonsecaThin';
+    src:local('FonsecaThin'), url('./assets/fonts/Fonseca-Thin.otf') format('otf');
+}
+
 #root{
-    background: var(--background);
+    /* background: var(--background); */
    min-height: 100vh;
-} */
+   font-family: 'FonsecaThin';
+}
 
 
 
@@ -38,6 +44,10 @@ img.nav-brand {
 
 }
 
+img.personal {
+width: 10rem;
+border-radius: 5rem;
+}
 
 
 

@@ -72,18 +72,18 @@ const Background = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: .3,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 1000,
+                            area: 800,
                         },
                         value: 80,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 3,
                     },
                     shape: {
                         type: "hexagon",
