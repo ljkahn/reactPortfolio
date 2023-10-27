@@ -7,7 +7,7 @@ import brand from '../assets/workImages/brand.png';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-transparent">
+    <Navbar expand="lg" className="bg-body-transparent navbar">
     <Container className='d-flex justify-content-between'>
       <Navbar.Brand>
         <img src={brand} alt='Lia Kahn Logo' className='nav-brand'/>

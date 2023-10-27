@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import {Container} from 'react-bootstrap';
 import littleSiteofHorrors from '../assets/workImages/littleSiteofHorrors.png'
 import gameSeekers from '../assets/workImages/gameSeekers.png'
 import austynCody from '../assets/workImages/austynCody.png'
@@ -9,7 +10,7 @@ import austynCody from '../assets/workImages/austynCody.png'
 function WorkCarousel() {
   return (
     <div>Project
-
+      <Container className='d-flex justify-content-center'>
     <Carousel className='carouselSize'>
       <Carousel.Item>
         <img src={littleSiteofHorrors} alt="Little Site of Horrors" className='img-fluid' />
@@ -62,7 +63,7 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item> */}
     </Carousel>
-
+</Container>
     </div>
   )
 }
