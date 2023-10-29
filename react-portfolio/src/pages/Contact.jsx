@@ -10,6 +10,14 @@ function Contact () {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [notValid, setValid] = useState(false);
+
+  const resetText = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setValid(false);
+  }
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
