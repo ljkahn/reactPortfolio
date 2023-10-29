@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Error from './components/Error';
 import WorkCarousel from './components/Portfolio'
 import Background from './components/Background'
+import Resume from './components/Resume'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     <Route path = '/about' element = {<About/>}/>
     <Route path = '/contact' element = {<Contact/>}/>
     <Route path = '/work' element = {<WorkCarousel/>}/>
+    <Route path = '/resume' element = {<Resume/>}/>
     <Route path = '*' element = {<Error/>}/>
     </Routes>
     <Footer/>

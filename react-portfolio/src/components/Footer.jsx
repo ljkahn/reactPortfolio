@@ -7,7 +7,7 @@ function Footer() {
   return (
 
     <footer>
-      <Container>
+      <Container className='footer'>
         <Row className="justify-content-center svgImg">
      <Col>
         <a

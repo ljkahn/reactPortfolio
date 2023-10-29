@@ -17,7 +17,7 @@ function Header() {
         <Nav className='fs-1'>
      
           <Link to="/about" className='nav-link'>About</Link>
-          <Link to="/work" className='nav-link'>Portolio</Link>
+          <Link to="/work" className='nav-link'>Portfolio</Link>
           <Link to="/contact" className='nav-link'>Contact</Link>
           <Link to="/resume" className='nav-link'>Resume</Link>
         </Nav>
