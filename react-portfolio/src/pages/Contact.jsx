@@ -17,7 +17,7 @@ function Contact () {
     setEmail('');
     setMessage('');
     setValid(false);
-  }
+  };
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
@@ -34,6 +34,36 @@ function Contact () {
       }, (error) => {
           console.log(error.text);
       });
+
+
+      const nameSubmit = (e) => {
+        setName(e.target.value)
+        if(name) {
+          setValid(false)
+        }
+      }
+
+      const emailSubmit = (e) => {
+        setEmail(e.target.value)
+        if(email) {
+          setValid(false)
+        }
+      }
+
+
+      const messageSubmit = (e) => {
+        setMessage(e.target.value)
+        if(message) {
+          setValid(false)
+        }
+      }
+
+
+      const validate = (e) => {
+        if(!e.target.value) {
+          setValid(true)
+        }
+      }
   };
 
   return (
