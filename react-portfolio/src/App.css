@@ -69,9 +69,15 @@ margin-left: 10rem;
 
 .carouselSize {
     width: 50rem;
-    height: 5rem;
+    height: 30rem;
+    align-self: center;
     
    
+}
+
+img.portfolio {
+    width: 50 rem;
+    height: 30rem;
 }
 
 
