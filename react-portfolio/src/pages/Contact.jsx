@@ -69,12 +69,12 @@ function Contact () {
   return (
     <form ref={form} onSubmit={sendEmail} className='contactForm'>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" value={name} onChange={nameSubmit} />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" value={email} onChange={emailSubmit} />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input type="submit" value={message} onChange={messageSubmit} />
     </form>
   );
 };
