@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import Header from './components/Navbar';
 import Footer from './components/Footer';
 import Error from './components/Error';
-import WorkCarousel from './components/Work'
+import WorkCarousel from './components/Portfolio'
 import Background from './components/Background'
 
 

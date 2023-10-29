@@ -7,7 +7,7 @@ import brand from '../assets/workImages/brand.png';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-transparent navbar">
+    <Navbar expand="lg" className="bg-body-transparent navbar ">
     <Container className='d-flex justify-content-between'>
       <Navbar.Brand>
         <img src={brand} alt='Lia Kahn Logo' className='nav-brand'/>
@@ -17,9 +17,9 @@ function Header() {
         <Nav className='fs-1'>
      
           <Link to="/about" className='nav-link'>About</Link>
-          <Link to="/work" className='nav-link'>Work</Link>
+          <Link to="/work" className='nav-link'>Portolio</Link>
           <Link to="/contact" className='nav-link'>Contact</Link>
-
+          <Link to="/resume" className='nav-link'>Resume</Link>
         </Nav>
         </Navbar.Collapse>
     </Container>
