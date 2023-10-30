@@ -34,6 +34,7 @@
 img.nav-brand {
     width: 8rem;
     height: 5rem;
+    margin-right: 15rem;
 }
 
 img.work {
@@ -94,6 +95,16 @@ img.portfolio {
     align-items: center;
 }
 
+
+
+/* RESUME */
+
+img.resume {
+    width: 30rem;
+    height: 40rem;
+
+    
+}
 
 /* FOOTER */
 

@@ -10,7 +10,7 @@ function Contact () {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  // const [notValid, setValid] = useState(false);
+  const [notValid, setValid] = useState(false);
 
   const resetText = () => {
     setName('');

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react';
+import resume from '../assets/workImages/resume.png'
 
-export class Resume extends Component {
-  render() {
+function Resume() {
     return (
-      <div><img src="" alt="" /></div>
+      <div><img src={resume} alt="" className='d-flex justify-content-center resume'/></div>
     )
-  }
+  
 }
 
 export default Resume
