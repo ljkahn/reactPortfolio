@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import {Container} from 'react-bootstrap';
-import littleSiteofHorrors from '../assets/workImages/littleSiteofHorrors.png'
+
+import littleSiteOfHorrors from '../assets/workImages/littleSiteOfHorrors.png'
 import gameSeekers from '../assets/workImages/gameSeekers.png'
 import austynCody from '../assets/workImages/austynCody.png'
 import javaQuiz from '../assets/workImages/javaQuiz.png'
@@ -16,7 +16,7 @@ function WorkCarousel() {
 
     <Carousel className='position-absolute top-50 start-50 translate-middle carouselSize work'>
       <Carousel.Item>
-        <img src={littleSiteofHorrors} alt="Little Site of Horrors" className='img-fluid portfolio' />
+        <img src={littleSiteOfHorrors} alt="Little Site of Horrors" className='img-fluid portfolio' />
         <Carousel.Caption>
           <h3>Little Site of Horrors</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
