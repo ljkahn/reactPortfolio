@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Resume extends Component {
   render() {
     return (
-      <div>Resume</div>
+      <div><img src="" alt="" /></div>
     )
   }
 }

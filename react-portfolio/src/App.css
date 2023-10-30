@@ -50,13 +50,16 @@ img.work {
     /* margin: 10rem; */
     margin-left: 20rem;
     margin-right: 20rem;
+    margin-top: 4rem;
 
 }
 
 img.personal {
-width: 15rem;
-border-radius: 5rem;
-margin-left: 10rem;
+width: 20rem;
+height: 15rem;
+border-radius: 7rem;
+margin-left: 4rem;
+margin-top: 4rem;
 }
 
 

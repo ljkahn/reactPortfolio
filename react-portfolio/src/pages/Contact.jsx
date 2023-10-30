@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 
@@ -10,7 +10,7 @@ function Contact () {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [notValid, setValid] = useState(false);
+  // const [notValid, setValid] = useState(false);
 
   const resetText = () => {
     setName('');
@@ -34,7 +34,7 @@ function Contact () {
       }, (error) => {
           console.log(error.text);
       });
-
+    }
 
       const nameSubmit = (e) => {
         setName(e.target.value)
@@ -64,7 +64,7 @@ function Contact () {
           setValid(true)
         }
       }
-  };
+  
 
   return (
     <form ref={form} onSubmit={sendEmail} className='contactForm'>
