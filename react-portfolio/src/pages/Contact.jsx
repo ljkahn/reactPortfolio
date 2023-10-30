@@ -45,7 +45,12 @@ function Contact () {
       setErrors((prevErrors) => ({ ...prevErrors, email: ''}))
     }
     return valid;
+
   }
+
+  };
+
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
