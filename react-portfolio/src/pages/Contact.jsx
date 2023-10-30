@@ -1,12 +1,51 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import validateEmail from '../utils/helper.js'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 
+
 function Contact () {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    email: '', 
+  })
+  const [errors, setErrors] = useState({
+    email: '',
+  })
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData, 
+      [name]: value,
+    });
+  };
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(validateForm()) {
+      //submit form data
+      sendEmail(e);
+    }
+  }
+
+  const validateForm = () => {
+    let valid = true;
+
+    //validate the email field
+    const emailError = validateEmail(formData.email);
+    if(emailError) {
+      setErrors((prevErrors) => ({...prevErrors, email: emailError}));
+      valid = false;
+      toast.error('Email is required and must be valid.')
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, email: ''}))
+    }
+    return valid;
+  }
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -67,14 +106,31 @@ function Contact () {
   
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='contactForm'>
+    <form ref={form} onSubmit={handleSubmit} className='contactForm'>
       <label>Name</label>
-      <input type="text" name="user_name" value={name} onChange={nameSubmit} />
+      <input 
+      type="text" 
+      name="user_name" 
+      value={name} 
+      onChange={nameSubmit} 
+      />
       <label>Email</label>
-      <input type="email" name="user_email" value={email} onChange={emailSubmit} />
+      <input 
+      type="email" 
+      name="user_email" 
+      value={email} 
+      onChange={emailSubmit} 
+      />
+      {errors.email && <div className='error'>{errors.email}</div>}
       <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value={message} onChange={messageSubmit} />
+      <input
+      name="message" 
+      value={message} 
+      onChange={messageSubmit} 
+      />
+      <button className='contactBtn' type="submit" >
+          Send
+        </button>
     </form>
   );
 };
