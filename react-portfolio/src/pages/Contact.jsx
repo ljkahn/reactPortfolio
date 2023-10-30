@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import validateName from '../utils/helper.js'
 import emailjs from '@emailjs/browser';
 import validateEmail from '../utils/helper.js'
 import { toast } from 'react-toastify';
@@ -48,7 +49,7 @@ function Contact () {
 
   }
 
-  };
+  ;
 
   
   const [name, setName] = useState('');
@@ -121,7 +122,7 @@ function Contact () {
       />
       <label>Email</label>
       <input 
-      type="email" 
+      type='text' 
       name="user_email" 
       value={email} 
       onChange={emailSubmit} 
@@ -129,6 +130,7 @@ function Contact () {
       {errors.email && <div className='error'>{errors.email}</div>}
       <label>Message</label>
       <input
+      type = 'text'
       name="message" 
       value={message} 
       onChange={messageSubmit} 
@@ -138,6 +140,6 @@ function Contact () {
         </button>
     </form>
   );
-};
+  };
 
 export default Contact
