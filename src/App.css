@@ -22,17 +22,19 @@
 
 .navbar{
    margin-top: 5rem; 
+   
 }
 
 .nav-link {
 
     text-align: center;
     color: var(--text);
+    font-size: small;
 
 }
 
 img.nav-brand {
-    width: 8rem;
+    width: 10rem;
     height: 5rem;
     margin-right: 15rem;
 }
@@ -102,14 +104,14 @@ img.portfolio {
 img.resume {
     width: 30rem;
     height: 40rem;
-
+    align-self: center;
     
 }
 
 /* FOOTER */
 
 .footer{
-position: absolute;
+position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
