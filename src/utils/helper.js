@@ -12,5 +12,6 @@ function validateName(name) {
   return '' // indicate no errors
 };
 
+
 export default {validateEmail, validateName};
 

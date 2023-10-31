@@ -47,6 +47,15 @@ function Contact () {
     }
     return valid;
 
+    const nameError = validateName(formData.name);
+    if(nameError) {
+      setErrors((prevErrors) => ({...prevErrors, name: nameError}));
+      valid = false;
+      toast.error('Name is required and must be valid.')
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, nane: ''}))
+    }
+    return valid;
   }
 
   ;
