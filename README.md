@@ -1,6 +1,6 @@
 # React Portfolio
 
-Welcome to my portfolio! Lia Kahn, a Software Developer currently enrolled in the University of Denver's Coding Boot Camp. My portfolio provides a glimpse into what I've been learning, where my interests lie, and a little about me!
+Welcome to my portfolio! I'm Lia Kahn, a Software Developer currently enrolled in the University of Denver's Coding Boot Camp. My portfolio provides a glimpse into what I've been learning, where my interests lie, and a little about me!
 
 To visit my portfolio click [here](https://main--super-meerkat-6b516d.netlify.app/)!
 
@@ -27,3 +27,7 @@ On the resume page - you will find a screenshot of my resume and a downloadable 
 ## License
 
 MIT license
+
+## Contributors
+
+I didnt have any other contributors but I received help from my tutor, Justin Moore.
