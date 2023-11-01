@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import brand from '../assets/workImages/brand.png';
+import PersonalAi from '../assets/siteImages/PersonalAi.png';
 
 
 
@@ -10,6 +11,7 @@ function Header() {
     <Navbar expand="lg" className="bg-body-transparent navbar ">
     <Container className='d-flexjustify-content-between'>
       <Navbar.Brand>
+        <img src={PersonalAi} alt='Lia Kahn' className='personal'/>
         <img src={brand} alt='Lia Kahn Logo' className='nav-brand'/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

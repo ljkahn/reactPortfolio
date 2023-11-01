@@ -20,6 +20,11 @@
 
 /* HEADER/NAVBAR */
 
+    .intro {
+    margin-left:15rem;
+    margin-top: 5rem;
+    font-size: 5rem;
+}
 .navbar{
    margin-top: 5rem; 
    
@@ -35,8 +40,8 @@
 
 img.nav-brand {
     width: 10rem;
-    height: 5rem;
-    margin-right: 15rem;
+    height: 4rem;
+    margin-right: 4rem;
 }
 
 img.work {
@@ -53,16 +58,14 @@ img.work {
     /* margin: 10rem; */
     margin-left: 20rem;
     margin-right: 20rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
 
 }
 
 img.personal {
-width: 20rem;
-height: 15rem;
+height: 10rem;
 border-radius: 7rem;
-margin-left: 4rem;
-margin-top: 4rem;
+
 }
 
 

@@ -126,6 +126,8 @@ function Contact () {
   
 
   return (
+    <div>
+      <h5 className='d-flex justify-content-center'> If you want to connect or have questions, send me a message!</h5>
     <form ref={form} onSubmit={handleSubmit} className='contactForm'>
       <label>Name</label>
       <input 
@@ -154,6 +156,7 @@ function Contact () {
           Send
         </button>
     </form>
+    </div>
   );
   };
 
