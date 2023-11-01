@@ -24,14 +24,16 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={gameSeekers} alt="Game Seekers" className ='img-fluid portfolio' />
+        <a href='https://ljkahn.github.io/videoGameProj/'>
+        <img src={gameSeekers} alt="Game Seekers" className ='img-fluid portfolio' /></a>
         <Carousel.Caption>
           <h3>Game Seekers</h3>
           <p>Video game finder web app.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={austynCody} alt="Austyn Cody Website" className='img-fluid portfolio' />
+        <a href='https://ljkahn.github.io/austynCody/'>
+        <img src={austynCody} alt="Austyn Cody Website" className='img-fluid portfolio' /></a>
         <Carousel.Caption>
           <h3>Austyn Cody Tattoos</h3>
           <p>
@@ -40,7 +42,8 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={javaQuiz} alt="text" className='img-fluid portfolio'/>
+        <a href='https://ljkahn.github.io/javaScriptQuiz/'>
+        <img src={javaQuiz} alt="text" className='img-fluid portfolio'/></a>
         <Carousel.Caption>
           <h3>JavaScript Quiz</h3>
           <p>
@@ -49,7 +52,8 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={weatherDash} alt="Website" className='img-fluid portfolio' />
+        <a href='https://ljkahn.github.io/weatherDashAPI/'>
+        <img src={weatherDash} alt="Website" className='img-fluid portfolio' /></a>
         <Carousel.Caption>
           <h3>Weather Dash API</h3>
           <p>
@@ -58,7 +62,8 @@ function WorkCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={workDaySched} alt="Website" className='img-fluid portfolio'/>
+        <a href='https://ljkahn.github.io/workDaySched/'>
+        <img src={workDaySched} alt="Website" className='img-fluid portfolio'/></a>
         <Carousel.Caption>
           <h3>Work Day Scheduler</h3>
           <p>
