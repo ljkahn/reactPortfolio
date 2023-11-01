@@ -121,3 +121,16 @@ position: fixed;
     width: 10rem;
     height: 5rem;
 }
+
+
+
+@media (min-width: 0px) and (max-width: 1250px) {
+    .nav-link {
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+}
