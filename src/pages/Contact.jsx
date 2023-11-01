@@ -66,23 +66,7 @@ function Contact () {
   };
 
   
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-  // // const [notValid, setValid] = useState(false);
 
-  // const resetText = () => {
-  //   setName('');
-  //   setEmail('');
-  //   setMessage('');
-  //   setValid(false);
-  // };
-
-  // Function that displays a success toast on bottom right of the page when form submission is successful
-  const toastifySuccess = () => {
-    toast('Form sent!', {
-      position: 'bottom-right',});
-    }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -95,27 +79,7 @@ function Contact () {
       });
     }
 
-      // const nameSubmit = (e) => {
-      //   setName(e.target.value)
-      //   if(name) {
-      //     setValid(false)
-      //   }
-      // }
 
-      // const emailSubmit = (e) => {
-      //   setEmail(e.target.value)
-      //   if(email) {
-      //     setValid(false)
-      //   }
-      // }
-
-
-      // const messageSubmit = (e) => {
-      //   setMessage(e.target.value)
-      //   if(message) {
-      //     setValid(false)
-      //   }
-      // }
 
 
       const validate = (e) => {
