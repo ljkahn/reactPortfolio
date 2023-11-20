@@ -65,8 +65,11 @@ function Contact () {
 
   };
 
-  
 
+  // Function that displays a success toast on bottom right of the page when form submission is successful
+  const toastifySuccess = () => {
+    toast('Form sent!');
+    }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -74,6 +77,8 @@ function Contact () {
     emailjs.sendForm('porfolio1', 'portfolio_template', form.current, 'RiL3vMh_6MN734yqq')
       .then((result) => {
           console.log(result.text);
+          toastifySuccess ();
+
       }, (error) => {
           console.log(error.text);
       });

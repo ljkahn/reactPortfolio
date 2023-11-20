@@ -84,6 +84,10 @@ border-radius: 7rem;
    
 }
 
+.carouselCaption {
+    background-color: #8c594d;
+}
+
 img.portfolio {
     width: 50 rem;
     height: 30rem;
